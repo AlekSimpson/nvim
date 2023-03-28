@@ -75,9 +75,6 @@ return packer.startup(function(use)
 	use("jose-elias-alvarez/null-ls.nvim")
 	use("jayp0521/mason-null-ls.nvim")
 
-	use("jose-elias-alvarez/null-ls.nvim")
-	use("jayp0521/mason-null-ls.nvim")
-
 	-- treesitter
 	use({
 		"nvim-treesitter/nvim-treesitter",
@@ -93,6 +90,8 @@ return packer.startup(function(use)
 	use("lewis6991/gitsigns.nvim")
 
 	use("JuliaEditorSupport/julia-vim")
+
+	use("mfussenegger/nvim-jdtls")
 
 	if packer_boostrap then
 		require("packer").sync()
